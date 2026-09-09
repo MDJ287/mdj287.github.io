@@ -16,10 +16,8 @@ header {
     h1 {
         margin: 0;
         font-size: 64px;
-        @media (max-width: 980px) {
-            @media (orientation: portrait) {
-                font-size: 96px;
-            }
+        @media (orientation: portrait) {
+            font-size: 96px;
         }
         color: #80ffff;
     }
@@ -27,13 +25,12 @@ header {
     div.h1-sub {
         color: #00c0c0;
         font-size: 24px;
-        @media (max-width: 980px) {
-            @media (orientation: portrait) {
-                font-size: 36px;
-            }
-        }
         position: relative;
         top: -16px;
+        @media (orientation: portrait) {
+            font-size: 36px;
+            top: -24px;
+        }
     }
 }
 
@@ -45,10 +42,8 @@ main {
 
     color: #c0ffff;
     font-size: 24px;
-    @media (max-width: 980px) {
-        @media (orientation: portrait) {
-            font-size: 36px;
-        }
+    @media (orientation: portrait) {
+        font-size: 36px;
     }
 
     p {
@@ -87,11 +82,18 @@ main {
                 width: 32px;
                 height: 32px;
                 margin-right: 4px;
+                @media (orientation: portrait) {
+                    width: 48px;
+                    height: 48px;
+                }
             }
 
             span {
                 position: relative;
                 top: -8px;
+                @media (orientation: portrait) {
+                    top: -12px;
+                }
             }
         }
         a:hover {
