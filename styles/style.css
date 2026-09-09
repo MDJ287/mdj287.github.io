@@ -1,5 +1,41 @@
 :root {
     background-color: #004040;
+    color: #c0ffff;
+    font-family: 'ibm plex serif', serif;
+}
+
+a {
+    color: #00ffff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    margin: 0;
+}
+
+nav {
+    background-color: #002020;
+    display: flex;
+    padding: 16px;
+
+    a {
+        color: inherit;
+        width: 100%;
+        font-size: 32px;
+        padding: 8px;
+        text-align: center;
+    }
+
+    a+a {
+        border-left: 1px solid #c0ffff;
+    }
+
+    a.here {
+        font-weight: bold;
+    }
 }
 
 header {
@@ -35,26 +71,42 @@ header {
 }
 
 main {
-    font-family: 'ibm plex serif', serif;
     margin: 0 auto 256px auto;
     padding: 10px;
     max-width: 1024px;
 
-    color: #c0ffff;
     font-size: 24px;
     @media (orientation: portrait) {
         font-size: 36px;
     }
 
+    h1,h2,h3 {
+        font-family: 'ibm plex sans devanagari', sans-serif;
+    }
+
+    h1 {
+        font-size: 48px;
+        @media (orientation: portrait) {
+            font-size: 72px;
+        }
+    }
+    h2 {
+        font-size: 32px;
+        @media (orientation: portrait) {
+            font-size: 48px;
+        }
+    }
+
+    ul {
+        li {
+            span.extra {
+                font-size: 60%;
+            }
+        }
+    }
+
     p {
         text-indent: 3em;
-        a {
-            color: #00ffff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
     }
 
     div#links {
@@ -66,12 +118,12 @@ main {
         gap: 24px;
         width: 100%;
         a {
+            color: inherit;
             width: 80%;
             margin: auto;
             padding: 16px;
             padding-bottom: 8px;
             text-align: center;
-            color: #c0ffff;
             text-decoration: none;
             border: 1px solid #c0ffff;
             border-radius: 16px;
@@ -79,13 +131,9 @@ main {
             transition: background-color 1s;
 
             img {
-                width: 32px;
-                height: 32px;
+                width: 1.5em;
+                height: 1.5em;
                 margin-right: 4px;
-                @media (orientation: portrait) {
-                    width: 48px;
-                    height: 48px;
-                }
             }
 
             span {
