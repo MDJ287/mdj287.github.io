@@ -22,6 +22,7 @@ nav {
     padding: 16px;
 
     a {
+        font-family: 'ibm plex sans devanagari', sans-serif;
         color: inherit;
         width: 100%;
         font-size: 32px;
