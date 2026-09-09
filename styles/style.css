@@ -150,3 +150,10 @@ main {
         }
     }
 }
+
+footer {
+    background-color: #002020;
+    color: #00c0c0;
+    padding: 16px;
+    padding-left: 32px;
+}
